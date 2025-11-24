@@ -1,0 +1,127 @@
+:root {
+      --verd: #4cd964;
+      --blau: #007aff;
+      --fons: #ffffff;
+      --text: #1d1d1f;
+      --gris: #6e6e73;
+    }
+
+    body {
+    
+      font-family: 'Outfit', sans-serif;
+      background: var(--fons);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0 1rem;
+    }
+    /* Barra de navegació */
+    .bg-secundario {
+      background-color: var(--secundario);
+      border-bottom: 1px solid #e5e5e7;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navegación-principal {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 1rem;
+      flex-wrap: wrap;
+    }
+
+    .navegación-principal a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .navegación-principal a:hover {
+      color: var(--blau);
+    }
+
+    /* Contenidor general */
+    .contenedor {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* Header principal */
+    header[role="banner"] {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 0 2rem;
+    }
+
+    h1, h2 {
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      color: var(--blau);
+    }
+
+    section {
+      max-width: 700px;
+      margin: 0 auto 3rem;
+    }
+
+    svg {
+      display: block;
+      margin: 0 auto 1rem;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    label {
+      font-weight: 500;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--gris);
+      border-radius: 6px;
+      font-family: inherit;
+    }
+
+    button {
+      background: var(--verd);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #3bc253;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+      color: var(--gris);
+    }
